@@ -27,9 +27,7 @@ export const pointToString = (point: Point): string =>
 export const scoreToString = (score: Score): string =>
   'You can use pattern matching with switch case pattern.';
 
-export const scoreWhenDeuce = (winner: Player): Score => {
-  throw new Error('not implemented');
-};
+export const scoreWhenDeuce = (winner: Player): Score => advantage(winner);
 
 export const scoreWhenAdvantage = (
   advantagedPlayed: Player,
